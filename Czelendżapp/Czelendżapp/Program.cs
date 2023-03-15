@@ -24,7 +24,8 @@ else if (gender == 'm')
     if (age < 18)
     {
         Console.WriteLine("On jest niepełnoletni");
-    }   if (name == "Adam")
+    }
+    if (name == "Adam")
     {
         Console.WriteLine("Ma na imię Adam");
     }
