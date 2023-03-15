@@ -1,32 +1,52 @@
-﻿// else if
+﻿
 
 
-var name = "Karol";
-var age = 65;
+var name = "Adam";
+char gender = 'm';    // może być więcej niż 2 opcje np. zmmiennokształtny kosmita z cipką i penisem 
+var age = 17;
 
 
-if (age > 10)
+if (gender == 'f')
 {
-    if (age > 65)
+    Console.WriteLine("To jest Kobieta");
+    if (age < 30)
     {
-        Console.WriteLine("Mam więcej niż 50 lat");
+        Console.WriteLine("Poniżej 30 roku życia");
     }
-    else if (name == "Kaarol")
+    else if (age == 33 && name == "Ewa")
     {
-        Console.WriteLine("Mam więcej niż 50 lat i mam na imię Karol");
+        Console.WriteLine("O imieniu Ewa lat 33");
     }
 }
-
-else if (age > 10) ;
+else if (gender == 'm')
 {
-    if (age > 70)
+    Console.WriteLine("To jest Mężczyzna");
+    if (age < 18)
     {
-        Console.WriteLine("ka");
-    }
-    else
+        Console.WriteLine("On jest niepełnoletni");
+    }   if (name == "Adam")
     {
-        Console.WriteLine("ba");
+        Console.WriteLine("Ma na imię Adam");
     }
+    else if (age >= 18)
+    {
+        Console.WriteLine("On jest pełnoletni");
+        if (name == "Jacek")
+        {
+            Console.WriteLine("Ma na imię Jacek");
+        }
+        else if (name == "Tomek")
+        {
+            Console.WriteLine("Ma na imię Tomek");
+        }
+    }
+
+    // Trochę ogarniam xd
+
 
 }
+
+
+
+
 
