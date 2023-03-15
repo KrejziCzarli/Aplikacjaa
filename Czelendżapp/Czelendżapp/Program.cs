@@ -1,6 +1,8 @@
 ﻿
 
 
+using System.ComponentModel.Design;
+
 var name = "Adam";
 char gender = 'm';    // może być więcej niż 2 opcje np. zmmiennokształtny kosmita z cipką i penisem 
 var age = 17;
@@ -20,18 +22,27 @@ if (gender == 'f')
 }
 else if (gender == 'm')
 {
-    Console.WriteLine("To jest Mężczyzna");
+    {
+        Console.WriteLine("To jest Mężczyzna");
+    }
     if (age < 18)
     {
         Console.WriteLine("On jest niepełnoletni");
+       
+        if (name == "Adam")
+        {
+            Console.WriteLine("Ma na imię Adam");
+        }
+        else if (name == "Karol")
+        {
+            Console.WriteLine("Ma na imię Karol");
+        }
     }
-    if (name == "Adam")
-    {
-        Console.WriteLine("Ma na imię Adam");
-    }
+    
     else if (age >= 18)
     {
         Console.WriteLine("On jest pełnoletni");
+       
         if (name == "Jacek")
         {
             Console.WriteLine("Ma na imię Jacek");
